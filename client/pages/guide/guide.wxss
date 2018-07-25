@@ -1,0 +1,116 @@
+/*
+.guide{
+  position:absolute;
+  width: 1077rpx; 
+  height: 673rpx;
+  text-align: center;
+}
+
+.guide image{
+  width:100%;
+  height:100%;
+}
+
+
+.btn1{
+  position: absolute;
+  width: 200rpx;
+  height: 200rpx;
+  left: 100rpx;
+  top:86rpx;
+  opacity: 0;
+}
+
+.btn2{
+  position: absolute;
+  width: 146rpx;
+  height: 130rpx;
+  left: 540rpx;
+  top:160rpx;
+  opacity: 0;
+}
+
+.btn3{
+  position: absolute;
+  width: 200rpx;
+  height: 140rpx;
+  left: 780rpx;
+  top:150rpx;
+  opacity: 0;
+}
+
+.btn4{
+  position: absolute;
+  width: 440rpx;
+  height: 140rpx;
+  left: 320rpx;
+  top:450rpx;
+  opacity: 0;
+}
+
+
+.image-style{ 
+ position: absolute; 
+ bottom: 240px; 
+ right: 100px; 
+ width: 1077rpx; 
+ height: 673rpx; 
+ z-index: 100; 
+} 
+
+
+.guide-image{
+ width: 1077rpx; 
+ height: 673rpx; 
+ z-index: 100; 
+} 
+*/
+
+.map-area{
+  display: block;
+  width:750rpx;
+  height: 480rpx;
+}
+
+
+.map-image{
+  width: 900rpx;
+  height: 600rpx;
+  background: #6b737b;
+}
+
+.btn1{
+  position: absolute;
+  width: 190rpx;
+  height: 200rpx;
+  left: 70rpx;
+  top:60rpx;
+  opacity: 0;
+}
+
+.btn2{
+  position: absolute;
+  width: 130rpx;
+  height: 130rpx;
+  left: 450rpx;
+  top:130rpx;
+  opacity: 0;
+}
+
+.btn3{
+  position: absolute;
+  width: 180rpx;
+  height: 140rpx;
+  left: 650rpx;
+  top:120rpx;
+  opacity: 0;
+}
+
+.btn4{
+  position: absolute;
+  width: 380rpx;
+  height: 140rpx;
+  left: 260rpx;
+  top:400rpx;
+  opacity: 0;
+}

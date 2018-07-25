@@ -1,0 +1,4 @@
+@import '../../../common/introduce.wxss';
+.introduction-text-box{
+  height: 480rpx;
+}

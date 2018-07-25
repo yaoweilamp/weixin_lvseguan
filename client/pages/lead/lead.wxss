@@ -1,0 +1,19 @@
+.container{
+  background-color: #c5dfc5;
+}
+
+.lead-body{
+  background: url("http://www.tianqiaokeji.com/wx_miniprogram/image/lead.png") no-repeat;
+  width: 750rpx;
+  height: 1200rpx;
+  background-size: cover;
+}
+
+
+.lead-image{
+  display: block;
+  width: 240rpx;
+  height: 50rpx;
+  padding-top: 1010rpx;
+  padding-left: 255rpx;
+}

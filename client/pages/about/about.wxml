@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="page-body">
+
+    <view class="about-icon">
+      <image src="http://www.tianqiaokeji.com/wx_miniprogram/image/about_icon.png"/>
+    </view>
+   
+    <view class="about-bottom">
+      <image src="http://www.tianqiaokeji.com/wx_miniprogram/image/about_bottom.png"/>
+    </view>
+
+  </view>
+</view>

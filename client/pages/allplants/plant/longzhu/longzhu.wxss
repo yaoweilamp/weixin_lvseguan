@@ -1,0 +1,20 @@
+@import '../../../common/introduce.wxss';
+/*
+.text-title1{
+  display: block;
+  margin-top: 0rpx;
+  padding-top: 30rpx;
+  justify-content: 24rpx;
+  font-size:21rpx;
+  font-weight: bold;
+  color:#3a822c;
+}
+
+.text-title2{
+  display: block;
+  margin-top: 0rpx;
+  padding-top: 30rpx;
+  padding-left: 10rpx;
+  font-size:21rpx;
+  color: #434343;
+}*/

@@ -1,0 +1,124 @@
+<!--pages/index/index.wxml-->
+
+<view class="container">
+  <view class="page-body">
+    <view class="swiper page-section page-section-spacing">
+      <swiper indicator-dots="{{indicatorDots}}"
+       indicator-color="rgba(255, 255, 255, .3)" indicator-active-color="rgba(0, 127, 108, .3)"
+       autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" class="swiper-image"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <view class="page-section">
+      <view class="page-section-navigate">
+        <view class="flex-wrp" style="flex-direction:row;">
+          <navigator url="../index/green_Introduce/green_Introduce?title=green_Introduce">
+              <image src="../../image/greenIntroduce.png" class = "navi-image"></image>
+          </navigator>
+          
+          <block wx:if="{{playing === true}}">
+            <view class="page-body-button" bindtap="pause">
+              <image src="../../image/audioguide.png" class = "navi-image"></image>
+            </view>
+          </block>
+          <block wx:if="{{playing === false}}">
+            <view class="page-body-button" bindtap="play">
+              <image src="../../image/audioguide.png" class = "navi-image"></image>
+            </view>
+          </block>
+
+        </view>
+      </view>
+    </view>
+
+    <view class="flex-wrp">
+      <image src="http://www.tianqiaokeji.com/wx_miniprogram/image/qgdl.png"  class="qgdl-image"></image>
+    </view>
+
+    <view class="map-area">
+
+      <movable-area style="width: 1100rpx; height: 480rpx; background: #6b737b; left:-175rpx;">
+        <movable-view style="width: 750rpx; height: 480rpx; background: #6b737b; left:175rpx;"
+          x="{{x}}" direction="horizontal">
+          
+          <button class="btn1" type="default" bindtap="changeLocation1">芭蕉</button>
+          <image class="btn1-image" hidden="{{btnhidden1}}" src="../../image/location.png" bindtap="changeLocation1"/>  
+          <button class="btn2" type="default" bindtap="changeLocation2">中庭</button>
+          <image class="btn2-image" hidden="{{btnhidden2}}" src="../../image/location.png" bindtap="changeLocation2"/> 
+          <button class="btn3" type="default" bindtap="changeLocation3">竹园</button>
+          <image class="btn3-image" hidden="{{btnhidden3}}" src="../../image/location.png" bindtap="changeLocation3"/> 
+          <button class="btn4" type="default" bindtap="changeLocation4">棕榈园</button>
+          <image class="btn4-image" hidden="{{btnhidden4}}" src="../../image/location.png" bindtap="changeLocation4"/>  
+
+
+          <image src="http://www.tianqiaokeji.com/wx_miniprogram/image/map.png" class="map-image"></image>
+        </movable-view>
+      </movable-area>
+
+      <view class="landmark">
+
+        <view wx:if="{{landmark_index==1}}">
+          <view class="landmark_l">
+            <image src="{{landmark_image1}}" class="landmark_l_image" ></image>
+          </view>
+        </view>
+        <view wx:if="{{landmark_index==2}}">
+          <view class="landmark_l">
+            <image src="{{landmark_image2}}" class="landmark_l_image" ></image>
+          </view>
+        </view>
+        <view wx:if="{{landmark_index==3}}">
+          <view class="landmark_l">
+            <image src="{{landmark_image3}}" class="landmark_l_image" ></image>
+          </view>
+        </view>
+        <view wx:if="{{landmark_index==4}}">
+          <view class="landmark_l">
+            <image src="{{landmark_image4}}" class="landmark_l_image" ></image>
+          </view>
+        </view>
+
+        <view class="landmark_r" bindtap="hyh">
+          <image src="http://www.tianqiaokeji.com/wx_miniprogram/image/hyh.png" class="landmark_r_image"></image>
+        </view>
+      </view>
+
+    </view>
+
+    <view class="garden">
+      <view class="garden_l">
+        <!--<navigator url="../index/bamboo_Introduce/bamboo_Introduce?title=bamboo_Introduce">-->
+        <navigator url="../guide/bamboo_guide/bamboo_guide?title=bamboo_guide">
+          <image src="http://www.tianqiaokeji.com/wx_miniprogram/image/bamboo_garden.png" class="garden_l_image"></image>
+        </navigator>
+      </view>
+      <view class="garden_r">
+        <!--<navigator url="../index/flowers_Introduce/flowers_Introduce?title=flowers_Introduce">-->
+        <navigator url="../guide/flowers_guide/flowers_guide?title=flowers_guide">
+          <image src="http://www.tianqiaokeji.com/wx_miniprogram/image/flowers_garden.png" class="garden_r_image"></image>
+        </navigator>
+      </view>
+      <view class="garden_l">
+        <!--<navigator url="../index/palm_Introduce/palm_Introduce?title=palm_Introduce">-->
+        <navigator url="../guide/palm_guide/palm_guide?title=palm_guide">
+          <image src="http://www.tianqiaokeji.com/wx_miniprogram/image/palm_garden.png" class="garden_l_image"></image>
+        </navigator>
+      </view>
+      <view class="garden_r">
+        <!--<navigator url="../index/banana_Introduce/banana_Introduce?title=banana_Introduce">-->
+        <navigator url="../guide/banana_guide/banana_guide?title=banana_guide">
+           <image src="http://www.tianqiaokeji.com/wx_miniprogram/image/banana_garden.png" class="garden_r_image"></image>
+        </navigator>
+      </view>
+    </view>
+
+
+
+  </view>
+</view>
+

@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="page-body">
+
+    <view class="map-area">
+      <movable-area style="width: 750rpx; height: 1400rpx; background: #6b737b;" class="movable_area">
+        <movable-view style="width: 900rpx; height: 660rpx;"
+          class="movable_view" x="{{x}}" y="{{y}}" inertia friction="1"  scale direction="all" scale-min="0.5" scale-max="4" scale-value="2">
+
+          <image src="http://www.tianqiaokeji.com/wx_miniprogram/image/map.png" class="map-image"></image>
+
+           <!--<navigator url="../index/banana_Introduce/banana_Introduce?title=banana_Introduce">
+           <navigator url="../index/introduce_Test/introduce_Test?title=introduce_Test">
+            <button class="btn1" type="default" bindtap="changeLocation1">芭蕉</button>
+          </navigator>-->
+        
+          <button class="btn1" type="default" bindtap="change1">芭蕉</button>
+        
+          <button class="btn2" type="default" bindtap="change2">中庭</button>
+        
+          <button class="btn3" type="default" bindtap="change3">竹园</button>
+        
+          <button class="btn4" type="default" bindtap="change4">棕榈园</button>
+
+        </movable-view>
+      </movable-area>
+
+    </view>
+
+
+  </view>
+</view>

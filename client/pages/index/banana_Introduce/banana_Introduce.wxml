@@ -1,0 +1,90 @@
+<view class="container">
+  <view class="page-body">
+    <view class="swiper page-section page-section-spacing">
+      <navigator url="../banana_view/banana_view?title=banana_view">
+          <image src="http://www.tianqiaokeji.com/wx_miniprogram/image/banana.jpg" class="garden-image"></image>
+      </navigator>
+    </view>
+
+    <view class="house-audio">
+      <view class="audio-wrp" style="flex-direction:row;">
+        <!--<image class="audio-image" src="../../../image/audio.png"></image>-->
+
+        <view class="house-audio-buttons">
+          <block wx:if="{{playing === false}}">
+            <view class="house-audio-button" bindtap="play">
+              <image src="../../../image/play.png" class="house-audio-image"></image>
+            </view>
+          </block>
+          <block wx:if="{{playing === true }}">
+            <view class="house-audio-button" bindtap="pause">
+              <image src="../../../image/pause.png" class="house-audio-image"></image>
+            </view>
+          </block>
+        </view>
+
+        <view class="audio-body-info">
+            <slider class="slider" min="0" max="{{max}}" step="1" block-size="16" value="{{playTime}}" bindchange="seek"></slider> 
+        </view>
+
+        <view class="play-time">
+            <text>{{formatedPlayTime}}</text>
+            <text>/{{finialPlayTime}}</text>
+        </view>
+        
+      </view>
+    </view>
+
+    <view class="introduction-text">
+      <view class="introduction-text-title">
+        <image src="../../../image/introduction_title.png"></image>
+        <text class="text-title1">芭蕉园简介</text>
+        <text class="text-title2">Banana Garden Introduction</text>
+      </view>
+      <view class="introduction-text-box">
+        <text decode="{{true}}">{{texts}}</text>
+      </view>
+    
+
+      <view style="white-space: nowrap;" class="box" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend">
+        <view class="club" animation="{{animation1}}" bindtap="scrollLeft">
+          <navigator url="{{clubs[0].url}}">
+            <image src="{{clubs[0].image}}"/>
+          </navigator>
+          <text>{{clubs[0].name}}</text>
+        </view>
+        <view class="club" animation="{{animation2}}" bindtap="scrollLeft">
+          <navigator url="{{clubs[1].url}}">  
+            <image src="{{clubs[1].image}}"/>
+          </navigator>
+          <text>{{clubs[1].name}}</text>
+        </view>
+        <view class="club" animation="{{animation3}}">
+          <navigator url="{{clubs[2].url}}">
+            <image src="{{clubs[2].image}}"/>
+          </navigator>
+          <text>{{clubs[2].name}}</text>
+        </view>
+        <view class="club" animation="{{animation4}}" bindtap="scrollRight">
+          <navigator url="{{clubs[3].url}}">
+            <image src="{{clubs[3].image}}"/>
+          </navigator>
+          <text>{{clubs[3].name}}</text>
+        </view>
+        <view class="club" animation="{{animation5}}" bindtap="scrollRight">
+          <navigator url="{{clubs[4].url}}">
+            <image src="{{clubs[4].image}}"/>
+          </navigator>
+          <text>{{clubs[4].name}}</text>
+        </view>
+        
+      </view>
+
+
+    </view>
+    
+    <view class="end">
+    </view>
+
+  </view>
+</view>

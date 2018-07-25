@@ -1,0 +1,51 @@
+<view class="container">
+  <view class="page-body">
+
+    <view class="notice-title">
+      <image class="title-image" src="http://www.tianqiaokeji.com/wx_miniprogram/image/notice_title.png"/>
+    </view>
+
+    <view class="house-audio">
+      <view class="audio-wrp" style="flex-direction:row;">
+        <!--<image class="audio-image" src="../../../image/audio.png"></image>-->
+
+        <view class="house-audio-buttons">
+          <block wx:if="{{playing === false}}">
+            <view class="house-audio-button" bindtap="play">
+              <image src="../../image/play.png" class="house-audio-image"></image>
+            </view>
+          </block>
+          <block wx:if="{{playing === true }}">
+            <view class="house-audio-button" bindtap="pause">
+              <image src="../../image/pause.png" class="house-audio-image"></image>
+            </view>
+          </block>
+        </view>
+
+        <view class="audio-body-info">
+            <slider class="slider" min="0" max="{{max}}" step="1" block-size="16" value="{{playTime}}" bindchange="seek"></slider> 
+        </view>
+
+        <view class="play-time">
+            <text>{{formatedPlayTime}}</text>
+            <text>/{{finialPlayTime}}</text>
+        </view>
+        
+      </view>
+    </view>
+
+    <view class="notice-body">
+      <view class="notice-image">
+        <image src="http://www.tianqiaokeji.com/wx_miniprogram/image/notice_image.png"/>
+      </view>
+      <view class="notice-bottom">
+        <image bindtap="openindex" src="http://www.tianqiaokeji.com/wx_miniprogram/image/notice_bottom.png"/>
+      </view>
+    </view>
+
+    <view class="end">
+    </view>
+
+
+  </view>
+</view>

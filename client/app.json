@@ -1,0 +1,110 @@
+{
+  "pages": [
+    "pages/lead/lead",
+    "pages/index/index",
+    "pages/guide/guide",
+    "pages/allplants/allplants",
+    "pages/notice/notice",
+    "pages/about/about",
+    "pages/index/green_Introduce/green_Introduce",
+    "pages/index/bamboo_Introduce/bamboo_Introduce",
+    "pages/index/flowers_Introduce/flowers_Introduce",
+    "pages/index/palm_Introduce/palm_Introduce",
+    "pages/index/banana_Introduce/banana_Introduce",
+    "pages/index/bamboo_view/bamboo_view",
+    "pages/index/flowers_view/flowers_view",
+    "pages/index/palm_view/palm_view",
+    "pages/index/banana_view/banana_view",
+    "pages/allplants/plant/baibujizhu/baibujizhu",
+    "pages/allplants/plant/feibaizhu/feibaizhu",
+    "pages/allplants/plant/fengweizhu/fengweizhu",
+    "pages/allplants/plant/foduzhu/foduzhu",
+    "pages/allplants/plant/guijiazhu/guijiazhu",
+    "pages/allplants/plant/huangjinjian/huangjinjian",
+    "pages/allplants/plant/longzhu/longzhu",
+    "pages/allplants/plant/maozhu/maozhu",
+    "pages/allplants/plant/nantianzhu/nantianzhu",
+    "pages/allplants/plant/zizhu/zizhu",
+    "pages/allplants/plant/erqiaoyulan/erqiaoyulan",
+    "pages/allplants/plant/jinyanxiu/jinyanxiu",
+    "pages/allplants/plant/baihuadaye/baihuadaye",
+    "pages/allplants/plant/jinyefuye/jinyefuye",
+    "pages/allplants/plant/luanshu/luanshu",
+    "pages/allplants/plant/mujin/mujin",
+    "pages/allplants/plant/yousong/yousong",
+    "pages/allplants/plant/zhengzhuxiu/zhengzhuxiu",
+    "pages/allplants/plant/zihongye/zihongye",
+    "pages/allplants/plant/ziwei/ziwei",
+    "pages/allplants/plant/dawangyezi/dawangyezi",
+    "pages/allplants/plant/diyongjinlian/diyongjinlian",
+    "pages/allplants/plant/huweiye/huweiye",
+    "pages/allplants/plant/hudielan/hudielan",
+    "pages/allplants/plant/huayeyanshan/huayeyanshan",
+    "pages/allplants/plant/huashengdun/huashengdun",
+    "pages/allplants/plant/jianali/jianali",
+    "pages/allplants/plant/jiabinglang/jiabinglang",
+    "pages/allplants/plant/jiupingna/jiupingna",
+    "pages/allplants/plant/lengshuihua/lengshuihua",
+    "pages/allplants/plant/bajiao/bajiao",
+    "pages/allplants/plant/chunyu/chunyu",
+    "pages/allplants/plant/gaoshanrong/gaoshanrong",
+    "pages/allplants/plant/guoziman/guoziman",
+    "pages/allplants/plant/huanghuameiren/huanghuameiren",
+    "pages/allplants/plant/jinmaijue/jinmaijue",
+    "pages/allplants/plant/kongque/kongque",
+    "pages/allplants/plant/lvrenjiao/lvrenjiao",
+    "pages/allplants/plant/nigula/nigula",
+    "pages/allplants/plant/xieweijiao/xieweijiao",
+    "pages/guide/bamboo_guide/bamboo_guide",
+    "pages/guide/flowers_guide/flowers_guide",
+    "pages/guide/palm_guide/palm_guide",
+    "pages/guide/banana_guide/banana_guide",
+    "pages/index/introduce_Test/introduce_Test"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#007f6c",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "绿色馆",
+    "backgroundColor": "#e5e5e5",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#007f6c",
+    "borderStyle": "white",
+    "backgroundColor": "#e5e5e5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/icon_index.png",
+        "selectedIconPath": "image/icon_index.png",
+        "text": "绿色馆"
+      },
+      {
+        "pagePath": "pages/guide/guide",
+        "iconPath": "image/icon_guide.png",
+        "selectedIconPath": "image/icon_guide_HL.png",
+        "text": "全馆导览"
+      },
+      {
+        "pagePath": "pages/allplants/allplants",
+        "iconPath": "image/icon_allplants.png",
+        "selectedIconPath": "image/icon_allplants_HL.png",
+        "text": "植物科普"
+      },
+      {
+        "pagePath": "pages/notice/notice",
+        "iconPath": "image/icon_notice.png",
+        "selectedIconPath": "image/icon_notice_HL.png",
+        "text": "游园须知"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

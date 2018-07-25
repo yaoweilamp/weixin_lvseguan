@@ -1,0 +1,49 @@
+<!--<view class="container">
+    <input type='text' confirm-type='search' bindinput='input1'  style='border:1px solid #f00'/>
+
+    <view wx:for="{{hosList}}" wx:for-item="h">
+        <text wx:if="{{h.show}}">{{h.name}}</text>
+    </view>
+</view>-->
+
+<!--用name 定义模版-->
+<template name="plantTemp">
+  <view  class="plant-panel">
+    <navigator url="{{url}}" class="plant-box" hover-class="weui-cell_active" style="flex-direction:colum;">
+      <view class="plant-image">
+        <image class="plant-box-image" src="{{src}}"/>
+      </view>
+      <view class="plant-box-title">{{name}}</view>
+    </navigator>
+  </view>
+</template>
+
+<view  class="page">
+  <view class="page__bd">
+    <scroll-view scroll-top="{{scrollTop}}" style="height: {{windowHeight}}px; width: {{windowWidth}}px;" scroll-y="true" bindscrolltoupper="pullDownRefresh"  bindscroll="scroll" bindscrolltolower="pullUpLoad" class="weui-panel weui-panel_access">
+      <view class="weui-panel__hd">
+        <view class="weui-search-bar">
+          <view class="weui-search-bar__form">
+            <view class="weui-search-bar__box">
+              <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+              <input type="text" class="weui-search-bar__input" placeholder="搜索" confirm-type='search' bindinput='input1'/>
+              <view class="weui-icon-clear" wx:if="{{search.length > 0}}" bindtap="clearInput">
+                <icon type="clear" size="14"></icon>
+              </view>
+            </view>
+          </view>
+          <!--<view class="weui-search-bar__cancel-btn" bindtap="searchData">搜索</view>-->
+        </view>
+      </view>
+      <view class="kind-list">
+        <view wx:for="{{plantList}}" class="kind-list_item">
+          <!--用is 使用模版-->
+          <template is="plantTemp" data="{{...item}}"/>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="page__ft">
+  </view>
+</view>
+

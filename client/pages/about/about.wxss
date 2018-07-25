@@ -1,0 +1,24 @@
+.about-icon{
+  display: block;
+  width: 100%;
+  margin-bottom:10rpx;
+  box-sizing: border-box;
+  /*padding-top: 300rpx;*/
+  padding-top: 260rpx;
+}
+
+.about-icon image{
+  width:750rpx;
+  height: 363rpx;
+}
+
+.about-bottom{
+  display: block;
+  /*padding-top:300rpx;*/
+  padding-top: 260rpx;
+}
+
+.about-bottom image{
+  width: 750rpx;
+  height: 143rpx;
+}
